@@ -1270,8 +1270,7 @@ var RoutingModule = /** @class */ (function () {
                 _angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"],
                 _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forRoot([
                     { path: 'home', component: _layout_components_home_home_component__WEBPACK_IMPORTED_MODULE_3__["HomeComponent"] },
-                    { path: '/home', component: _layout_components_home_home_component__WEBPACK_IMPORTED_MODULE_3__["HomeComponent"] },
-                    { path: 'myProfile', component: _layout_components_home_home_component__WEBPACK_IMPORTED_MODULE_3__["HomeComponent"] },
+                    { path: 'profile', component: _layout_components_home_home_component__WEBPACK_IMPORTED_MODULE_3__["HomeComponent"] },
                     { path: 'errorPage', component: _common_components_page_not_found_page_not_found_component__WEBPACK_IMPORTED_MODULE_4__["PageNotFoundComponent"] },
                     { path: '', redirectTo: 'home', pathMatch: 'full' },
                     // {path: 'home' , redirectTo: 'home' , pathMatch:'full'},
