@@ -1053,7 +1053,7 @@ var HeaderComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".top-menu{\r\n    margin: 2%;\r\n}\r\n\r\n.tab-icon {\r\n    margin-right: 8px;\r\n  }\r\n\r\n.userDetails{\r\n    text-align: right;\r\n    margin-top: 1%;\r\n    margin-right: 1%;\r\n    font-family: 'Footlight MT Light';\r\n  font-weight: 500;\r\n    color: darkolivegreen;\r\n}\r\n\r\n.vertical-align-middle { \r\n  vertical-align: middle; \r\n}\r\n\r\n.padding-bottom-30 {\r\n  padding-bottom: 30px;\r\n}\r\n "
+module.exports = ".top-menu{\r\n    margin: 2%;\r\n    \r\n}\r\n\r\n.tab-icon {\r\n    margin-right: 8px;\r\n  }\r\n\r\n.userDetails{\r\n    text-align: right;\r\n    margin-top: 1%;\r\n    margin-right: 1%;\r\n    font-family: 'Footlight MT Light';\r\n  font-weight: 500;\r\n    color: darkolivegreen;\r\n}\r\n\r\n.vertical-align-middle { \r\n  vertical-align: middle; \r\n}\r\n\r\n.padding-bottom-30 {\r\n  padding-bottom: 30px;\r\n}\r\n "
 
 /***/ }),
 
@@ -1064,7 +1064,7 @@ module.exports = ".top-menu{\r\n    margin: 2%;\r\n}\r\n\r\n.tab-icon {\r\n    m
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"userDetails\">\n  <mat-icon class=\"vertical-align-middle padding-bottom-30\">location_on</mat-icon> \n Your Location :  {{userCity}} , {{userTime}}  <br>\nWeather :  {{userWeather}}°  \n  <img src=\"http://openweathermap.org/img/wn/{{userWeatherIcon}}@2x.png\" width=\"50px\" height=\"50px\"/>  \n</div>\n<div class=\"top-menu\">\n  <mat-tab-group (selectedTabChange)=\"changeBackground($event)\">\n    <mat-tab>\n      <ng-template mat-tab-label>\n        <mat-icon class=\"tab-icon\">person_pin</mat-icon>\n        Intro\n      </ng-template>\n      <app-intro></app-intro>\n    </mat-tab>\n\n    <mat-tab>\n      <ng-template mat-tab-label>\n        <mat-icon class=\"tab-icon\">explore</mat-icon>\n        Discover me\n      </ng-template>\n      <app-my-story></app-my-story>\n    </mat-tab>\n\n    <mat-tab>\n      <ng-template mat-tab-label>\n        <mat-icon class=\"tab-icon\">ballot</mat-icon>\n        My Portfolio\n      </ng-template>\n      <app-portfolio></app-portfolio>\n    </mat-tab>\n\n    <mat-tab>\n      <ng-template mat-tab-label>\n        <mat-icon class=\"tab-icon\">highlight</mat-icon>\n        Career Highlights\n      </ng-template>\n      <app-highlights></app-highlights>\n    </mat-tab>\n\n    <mat-tab>\n      <ng-template mat-tab-label>\n        <mat-icon class=\"tab-icon\">contact_mail</mat-icon>\n        Contact\n      </ng-template>\n      <app-contact></app-contact>\n    </mat-tab>\n  </mat-tab-group>\n</div>"
+module.exports = "<div class=\"userDetails\">\n  <mat-icon class=\"vertical-align-middle padding-bottom-30\">location_on</mat-icon> \n Your Location :  {{userCity}} , {{userTime}}  <br>\n<!-- Weather :  {{userWeather}}°   -->\n  <!-- <img src=\"http://openweathermap.org/img/wn/{{userWeatherIcon}}@2x.png\" width=\"50px\" height=\"50px\"/>   -->\n</div>\n<div class=\"top-menu\">\n  <mat-tab-group (selectedTabChange)=\"changeBackground($event)\">\n    <mat-tab>\n      <ng-template mat-tab-label>\n        <mat-icon class=\"tab-icon\">person_pin</mat-icon>\n        Intro\n      </ng-template>\n      <app-intro></app-intro>\n    </mat-tab>\n\n    <mat-tab>\n      <ng-template mat-tab-label>\n        <mat-icon class=\"tab-icon\">explore</mat-icon>\n        Discover me\n      </ng-template>\n      <app-my-story></app-my-story>\n    </mat-tab>\n\n    <mat-tab>\n      <ng-template mat-tab-label>\n        <mat-icon class=\"tab-icon\">ballot</mat-icon>\n        My Portfolio\n      </ng-template>\n      <app-portfolio></app-portfolio>\n    </mat-tab>\n\n    <mat-tab>\n      <ng-template mat-tab-label>\n        <mat-icon class=\"tab-icon\">highlight</mat-icon>\n        Career Highlights\n      </ng-template>\n      <app-highlights></app-highlights>\n    </mat-tab>\n\n    <mat-tab>\n      <ng-template mat-tab-label>\n        <mat-icon class=\"tab-icon\">contact_mail</mat-icon>\n        Contact\n      </ng-template>\n      <app-contact></app-contact>\n    </mat-tab>\n  </mat-tab-group>\n</div>"
 
 /***/ }),
 
@@ -1270,8 +1270,6 @@ var RoutingModule = /** @class */ (function () {
                 _angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"],
                 _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forRoot([
                     { path: 'home', component: _layout_components_home_home_component__WEBPACK_IMPORTED_MODULE_3__["HomeComponent"] },
-                    { path: 'profile', component: _layout_components_home_home_component__WEBPACK_IMPORTED_MODULE_3__["HomeComponent"] },
-                    { path: 'errorPage', component: _common_components_page_not_found_page_not_found_component__WEBPACK_IMPORTED_MODULE_4__["PageNotFoundComponent"] },
                     { path: '', redirectTo: 'home', pathMatch: 'full' },
                     // {path: 'home' , redirectTo: 'home' , pathMatch:'full'},
                     { path: '**', component: _common_components_page_not_found_page_not_found_component__WEBPACK_IMPORTED_MODULE_4__["PageNotFoundComponent"] }
