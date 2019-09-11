@@ -15,10 +15,27 @@
     
   <meta charset="utf-8">
   <title>Nikhil Desu</title>
-  <base href="/myApp">
+  <base href="/">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script>
+    $(document).ready(function() {
+  $(".scrollDown").click(function() {
+       $('html, body').animate({
+           scrollTop: $(".scrollToFooter").offset().top
+       }, 3000);
+   });
+  });
+  
+  $(document).ready(function() {
+  $(".scrollUp").click(function() {
+       $('html, body').animate({
+           scrollTop: $(".scrollUpHeader").offset().top 
+       }, 2000); 
+   });
+  });
+  </script>
 </head>
 <body>
   <app-root></app-root>

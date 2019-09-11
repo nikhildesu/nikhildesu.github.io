@@ -328,7 +328,7 @@ module.exports = ".overlayBackground{\r\n  width: 100%;\r\n  height: 100%;\r\n  
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"overlayBackground\" [style.background]=\"backgroundImageName\">\n  <app-header></app-header>\n  <app-home (selectedTab)=\"changeNewBackground($event)\"></app-home>\n  <!-- <router-outlet>\n    <span>\n      <div *ngIf=\"LOAD_SPINNER\">\n        <div class=\"loading\">\n          <div class=\"spinner\">\n            <div class=\"bounce1\"></div>\n            <div class=\"bounce2\"></div>\n            <div class=\"bounce3\"></div>\n          </div>\n        </div>\n      </div>\n    </span>\n  </router-outlet> -->\n</div>\n"
+module.exports = "<div class=\"overlayBackground\" [style.background]=\"backgroundImageName\">\n  <app-header></app-header>\n  <app-home (selectedTab)=\"changeNewBackground($event)\"></app-home>\n  <!-- <router-outlet>\n    <span>\n      <div *ngIf=\"LOAD_SPINNER\">\n        <div class=\"loading\">\n          <div class=\"spinner\">\n            <div class=\"bounce1\"></div>\n            <div class=\"bounce2\"></div>\n            <div class=\"bounce3\"></div>\n          </div>\n        </div>\n      </div>\n    </span>\n  </router-outlet> -->\n  <div style=\"float: right;\" class=\"scrollUp scrollToFooter\">\n    <img src=\"../assets/images/down-arrow-1509661-1277198.png\"  class=\"scrollUpIcon\">\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -432,12 +432,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _application_components_intro_intro_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./application-components/intro/intro.component */ "./src/app/application-components/intro/intro.component.ts");
 /* harmony import */ var ng_simple_slideshow__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ng-simple-slideshow */ "./node_modules/ng-simple-slideshow/ng-simple-slideshow.es5.js");
 /* harmony import */ var _common_components_hire_dialog_hire_dialog_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./common-components/hire-dialog/hire-dialog.component */ "./src/app/common-components/hire-dialog/hire-dialog.component.ts");
+/* harmony import */ var _common_components_notification_notification_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./common-components/notification/notification.component */ "./src/app/common-components/notification/notification.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -471,7 +473,8 @@ var AppModule = /** @class */ (function () {
                 _layout_components_header_header_component__WEBPACK_IMPORTED_MODULE_13__["HeaderComponent"],
                 _layout_components_home_home_component__WEBPACK_IMPORTED_MODULE_14__["HomeComponent"],
                 _application_components_intro_intro_component__WEBPACK_IMPORTED_MODULE_15__["IntroComponent"],
-                _common_components_hire_dialog_hire_dialog_component__WEBPACK_IMPORTED_MODULE_17__["HireDialogComponent"]
+                _common_components_hire_dialog_hire_dialog_component__WEBPACK_IMPORTED_MODULE_17__["HireDialogComponent"],
+                _common_components_notification_notification_component__WEBPACK_IMPORTED_MODULE_18__["NotificationComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
@@ -485,7 +488,7 @@ var AppModule = /** @class */ (function () {
             ],
             providers: [],
             bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_7__["AppComponent"]],
-            entryComponents: [_common_components_hire_dialog_hire_dialog_component__WEBPACK_IMPORTED_MODULE_17__["HireDialogComponent"]]
+            entryComponents: [_common_components_hire_dialog_hire_dialog_component__WEBPACK_IMPORTED_MODULE_17__["HireDialogComponent"], _common_components_notification_notification_component__WEBPACK_IMPORTED_MODULE_18__["NotificationComponent"]]
         })
     ], AppModule);
     return AppModule;
@@ -640,7 +643,7 @@ var HighlightsComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".linerClass{\r\n  border: 3px solid rgba(129, 150, 182, 0.658);\r\n  border-right: 0;   \r\n  border-left: 0;   \r\n  padding: 2%;\r\n}\r\n\r\n\r\n.image-card {\r\n  width: 100%;\r\n  /* margin-left: 10%; */\r\n  /* margin-top: 5%; */\r\n  margin-bottom: 1%;\r\ntext-align: center;\r\nborder: 1px solid rgba(88, 125, 180, 0.658); \r\nborder-radius: 10%;\r\n/* border-top-left-radius: 10%;   */\r\n}\r\n\r\n\r\n.myImage{\r\n  border: 1px solid rgba(88, 125, 180, 0.658); \r\n  border-top-right-radius: 10%;\r\n  border-top-left-radius: 10%;\r\n}\r\n\r\n\r\n.hireBtn{\r\n    width: 60%;\r\n    font-size: 15px;\r\n}\r\n\r\n\r\n.chipCards{\r\nwidth: 160px;\r\nheight: 50px; \r\nline-height: 50px; \r\ncursor: pointer; \r\nfont-size: 15px;\r\ntext-align: center;\r\nborder: 1px solid rgba(88, 125, 180, 0.658); \r\nborder-radius: 5px;   \r\nbackground: -webkit-radial-gradient(rgb(28, 57, 185), rgb(201, 91, 91));\r\n-webkit-background-clip: text;\r\n-webkit-text-fill-color: transparent;\r\n}\r\n\r\n\r\n.button-row button,\r\n.button-row a {\r\nwidth: 150px; \r\nmargin: 15px 0 15px 15px;\r\ntext-align: center;\r\n}"
+module.exports = ".linerClass{\r\n  border: 3px solid rgba(129, 150, 182, 0.658);\r\n  border-right: 0;   \r\n  border-left: 0;   \r\n  padding: 2%;\r\n}\r\n\r\n\r\n.image-card {\r\n  width: 100%;\r\n  /* margin-left: 10%; */\r\n  /* margin-top: 5%; */\r\n  margin-bottom: 1%;\r\ntext-align: center;\r\nborder: 1px solid rgba(88, 125, 180, 0.658); \r\nborder-radius: 10%;\r\n/* border-top-left-radius: 10%;   */\r\n}\r\n\r\n\r\n.myImage{\r\n  border: 1px solid rgba(88, 125, 180, 0.658); \r\n  border-top-right-radius: 10%;\r\n  border-top-left-radius: 10%;\r\n}\r\n\r\n\r\n.hireBtn{\r\n    width: 60%;\r\n    font-size: 15px;\r\n}\r\n\r\n\r\n.chipCards{\r\nwidth: 160px;\r\nheight: 50px; \r\nline-height: 50px; \r\ncursor: pointer; \r\nfont-size: 15px;\r\ntext-align: center;\r\nborder: 1px solid rgba(88, 125, 180, 0.658); \r\nborder-radius: 5px;   \r\nbackground: -webkit-radial-gradient(rgb(28, 57, 185), rgb(201, 91, 91));\r\n-webkit-background-clip: text;\r\n-webkit-text-fill-color: transparent;\r\n}\r\n\r\n\r\n.roundChip{\r\n  height: 65px; \r\n  line-height: 50px; \r\n  cursor: pointer; \r\n  line-height: 0%;\r\n  font-size: 15px;\r\n  text-align: center; \r\n  border: 5px dotted rgba(241, 0, 0, 0.41);\r\n  border-radius: 50px;    \r\n  background: -webkit-radial-gradient(rgb(28, 57, 185), rgb(201, 91, 91));\r\n  -webkit-background-clip: text;\r\n  -webkit-text-fill-color: transparent;\r\n}\r\n\r\n\r\n.button-row button,\r\n.button-row a {\r\nwidth: 150px; \r\nmargin: 15px 0 15px 15px;\r\ntext-align: center;\r\n}\r\n\r\n\r\n@media screen and (min-width: 200px) and (max-width: 1024px){\r\n  .stackUp{\r\n    margin-top: 15%;\r\n  } \r\n}"
 
 /***/ }),
 
@@ -651,7 +654,7 @@ module.exports = ".linerClass{\r\n  border: 3px solid rgba(129, 150, 182, 0.658)
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"titleFont\">\n  <span style=\"letter-spacing:0.05em; \">INTRODUCTION</span>\n</div>\n<br>\n<div class=\"mainContainer\">\n<div class=\"leftContent\">\n  <mat-card class=\"image-card\">\n    <img class=\"myImage\" mat-card-image src=\"../../../../assets/images/Nikhil_pic.jpg\" alt=\"Photo of a Shiba Inu\">\n    <button class=\"hireBtn\" mat-stroked-button color=\"primary\" (click)=\"openHireDialog()\">Hire Me</button>\n  </mat-card>\n\n</div>\n\n<div class=\"rightContent\">\n  <p style=\"font-size: 50px;\">Nikhil &nbsp;Desu</p>\n  <br>\n  <div class=\"linerClass\">Web Developer | Creative Designer</div>\n  <br>\n  <div class=\"description\">Love to do things in creative way !</div>\n  <br><br>\n  <div class=\"button-row\">\n    <a href=\"../../../assets/pdfs/Nikhil_Resume.pdf\" target=\"_blank\"> <button class=\"chipCards\" mat-button>View\n        Resume</button></a>\n\n    <a href=\"../../../assets/pdfs/Nikhil_Resume.pdf\" download> <button class=\"chipCards\" mat-button>Download Resume \n      </button></a>\n  </div>\n  <br>\n  <div>\n    <!-- <div class=\"imageRow\">\n        <img src=\"../../../assets/images/angular.png\" class=\"stackImage stackUp\"> \n        <img src=\"../../../assets/images/javascript.png\" class=\"stackImage\">\n        <img src=\"../../../assets/images/typescript.jpg\" class=\"stackImage stackUp\">\n        <img src=\"../../../assets/images/HTML5.png\" class=\"stackImage\">\n        <img src=\"../../../assets/images/css.png\" class=\"stackImage stackUp\">\n        <img src=\"../../../assets/images/bootstrap.png\" class=\"stackImage\">\n     </div>\n     <div class=\"imageRow\">\n        <img src=\"../../../assets/images/jquery.png\" class=\"stackImage stackUp\">          \n        <img src=\"../../../assets/images/node.jpg\" class=\"stackImage\">\n        <img src=\"../../../assets/images/expressjs.png\" class=\"stackImage stackUp\">\n        <img src=\"../../../assets/images/mongo.png\" class=\"stackImage\">\n        <img src=\"../../../assets/images/java.jpg\" class=\"stackImage stackUp\">\n        <img src=\"../../../assets/images/oracle.jpg\" class=\"stackImage\">\n     </div> -->\n    </div>\n   \n</div>\n\n \n     \n "
+module.exports = "<div class=\"titleFont\">\n  <span style=\"letter-spacing:0.05em; \">INTRODUCTION</span>\n</div>\n<br>\n<div class=\"mainContainer\">\n<div class=\"leftContent\" style=\"margin: 25px 50px 25px 50px; width: 350px;\">\n  <mat-card class=\"image-card\" style=\"box-shadow: 0 8px 8px rgba(1,67,163,.24), 0 0 8px rgba(1,67,163,.12), 0 6px 18px rgba(43,133,231,.12);\">\n    <img class=\"myImage\" mat-card-image src=\"../../../../assets/images/Nikhil_pic.jpg\" alt=\"Photo of a Shiba Inu\">\n    <button class=\"hireBtn\" mat-stroked-button color=\"primary\" (click)=\"openHireDialog()\">Hire Me</button>\n  </mat-card>\n\n</div>\n\n<div class=\"rightContent\" style=\"margin-top: 3%;\">\n  <p style=\"font-size: 50px;\">Nikhil &nbsp;Desu</p>\n  <br>\n  <div class=\"linerClass\">Web Developer | Creative Designer</div>\n  <br>\n  <div class=\"description\">Love to do things in creative way !</div>\n  <br><br>\n  <div class=\"button-row\">\n    <a href=\"../../../assets/pdfs/Nikhil_Resume.pdf\" target=\"_blank\"> <button class=\"chipCards\" mat-button>View\n        Resume</button></a>\n\n    <a href=\"../../../assets/pdfs/Nikhil_Resume.pdf\" download> <button class=\"chipCards\" mat-button>Download Resume \n      </button></a>\n  </div>\n  <br>\n    \n  <div class=\"scrollDown\" >  \n      <button   matTooltip=\"Scroll\" class=\"roundChip shake-bottom\" matTooltipPosition=\"above\" mat-button  (click)=\"showTechIcons = !showTechIcons\">\n          show More \n        <img src=\"../../../assets/images/up-arrow-1562227-1322272.png\" height=\"35px\" width=\"35px\">\n      </button> \n    </div>\n</div>\n  <br>\n  <br> \n    <div *ngIf=\"showTechIcons\">\n    <div class=\"imageRow\">\n        <img matTooltip=\"Angular\" matTooltipPosition=\"above\" src=\"../../../assets/images/angular.png\" class=\"stackImage bounce-in-top1  stackUp\"> \n        <img matTooltip=\"Javascript\" matTooltipPosition=\"above\"  src=\"../../../assets/images/js.png\" class=\"stackImage bounce-in-top2  \">\n        <img matTooltip=\"Typescript\" matTooltipPosition=\"above\"  src=\"../../../assets/images/ts.png\" class=\"stackImage bounce-in-top3  stackUp\">\n        <img matTooltip=\"HTML\" matTooltipPosition=\"above\"  src=\"../../../assets/images/htmll.png\" class=\"stackImage bounce-in-top4 \">\n        <img matTooltip=\"CSS\" matTooltipPosition=\"above\"  src=\"../../../assets/images/csss.png\" class=\"stackImage bounce-in-top5  stackUp  \">\n        <img matTooltip=\"Bootstrap\" matTooltipPosition=\"above\"  src=\"../../../assets/images/bootstrap.png\" class=\"bounce-in-top6 stackImage \">\n     </div>\n     <div style=\"margin-left: 30%; font-size: 50px;\" class=\"myFont\">My Technical Stack\n      <h6 style=\"margin-left: 20%;\">(hover the icon)</h6>\n    </div>\n     <br>\n     <div class=\"imageRow\">\n        <img matTooltip=\"JQuery\" matTooltipPosition=\"above\"  src=\"../../../assets/images/jquery.png\" class=\"stackImage bounce-in-top6 stackUp\">          \n        <img matTooltip=\"NodeJS\" matTooltipPosition=\"above\"  src=\"../../../assets/images/nodejs.png\" class=\"stackImage bounce-in-top5\">\n        <img matTooltip=\"ExpressJS\" matTooltipPosition=\"above\"  src=\"../../../assets/images/expressjs.png\" class=\"stackImage bounce-in-top4 stackUp\">\n        <img matTooltip=\"MongoDB\" matTooltipPosition=\"above\"  src=\"../../../assets/images/mongo.png\" class=\"stackImage bounce-in-top3\">\n        <img matTooltip=\"Java\" matTooltipPosition=\"above\"  src=\"../../../assets/images/java.png\" class=\"stackImage bounce-in-top2 stackUp\">\n        <img matTooltip=\"OracleDB\" matTooltipPosition=\"above\"  src=\"../../../assets/images/oracle.jpg\" class=\"stackImage bounce-in-top1\">\n     </div> \n     \n    </div>\n   \n</div>\n\n \n     \n "
 
 /***/ }),
 
@@ -669,6 +672,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
 /* harmony import */ var src_app_common_components_hire_dialog_hire_dialog_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/app/common-components/hire-dialog/hire-dialog.component */ "./src/app/common-components/hire-dialog/hire-dialog.component.ts");
 /* harmony import */ var src_app_services_spinner_spinner_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/services/spinner/spinner.service */ "./src/app/services/spinner/spinner.service.ts");
+/* harmony import */ var src_app_common_components_notification_notification_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! src/app/common-components/notification/notification.component */ "./src/app/common-components/notification/notification.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -682,10 +686,13 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 
+
 var IntroComponent = /** @class */ (function () {
-    function IntroComponent(spinnerService, dialog) {
+    function IntroComponent(spinnerService, dialog, snackBar) {
         this.spinnerService = spinnerService;
         this.dialog = dialog;
+        this.snackBar = snackBar;
+        this.showTechIcons = false;
     }
     IntroComponent.prototype.ngOnInit = function () {
     };
@@ -697,8 +704,15 @@ var IntroComponent = /** @class */ (function () {
         this.dialogRef.afterClosed().subscribe(function (result) {
             if (result) {
                 console.log('Hire Accepted');
+                _this.displayMessage("Mail sent successfully!");
             }
             _this.dialogRef = null;
+        });
+    };
+    IntroComponent.prototype.displayMessage = function (message) {
+        this.snackBar.openFromComponent(src_app_common_components_notification_notification_component__WEBPACK_IMPORTED_MODULE_4__["NotificationComponent"], {
+            duration: 1500,
+            data: 'MEssage from comp',
         });
     };
     IntroComponent = __decorate([
@@ -707,7 +721,7 @@ var IntroComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./intro.component.html */ "./src/app/application-components/intro/intro.component.html"),
             styles: [__webpack_require__(/*! ./intro.component.css */ "./src/app/application-components/intro/intro.component.css")]
         }),
-        __metadata("design:paramtypes", [src_app_services_spinner_spinner_service__WEBPACK_IMPORTED_MODULE_3__["SpinnerService"], _angular_material__WEBPACK_IMPORTED_MODULE_1__["MatDialog"]])
+        __metadata("design:paramtypes", [src_app_services_spinner_spinner_service__WEBPACK_IMPORTED_MODULE_3__["SpinnerService"], _angular_material__WEBPACK_IMPORTED_MODULE_1__["MatDialog"], _angular_material__WEBPACK_IMPORTED_MODULE_1__["MatSnackBar"]])
     ], IntroComponent);
     return IntroComponent;
 }());
@@ -920,6 +934,69 @@ var HireDialogComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/common-components/notification/notification.component.css":
+/*!***************************************************************************!*\
+  !*** ./src/app/common-components/notification/notification.component.css ***!
+  \***************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/common-components/notification/notification.component.html":
+/*!****************************************************************************!*\
+  !*** ./src/app/common-components/notification/notification.component.html ***!
+  \****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div style=\"text-align: center\" class=\"shake-bottom3\">Mail sent successfully :)</div>"
+
+/***/ }),
+
+/***/ "./src/app/common-components/notification/notification.component.ts":
+/*!**************************************************************************!*\
+  !*** ./src/app/common-components/notification/notification.component.ts ***!
+  \**************************************************************************/
+/*! exports provided: NotificationComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NotificationComponent", function() { return NotificationComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var NotificationComponent = /** @class */ (function () {
+    function NotificationComponent() {
+    }
+    NotificationComponent.prototype.ngOnInit = function () {
+    };
+    NotificationComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-notification',
+            template: __webpack_require__(/*! ./notification.component.html */ "./src/app/common-components/notification/notification.component.html"),
+            styles: [__webpack_require__(/*! ./notification.component.css */ "./src/app/common-components/notification/notification.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], NotificationComponent);
+    return NotificationComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/common-components/page-not-found/page-not-found.component.css":
 /*!*******************************************************************************!*\
   !*** ./src/app/common-components/page-not-found/page-not-found.component.css ***!
@@ -1001,7 +1078,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div style=\"height: 5%;\"></div>"
+module.exports = "<div class=\"scrollUpHeader\"  style=\"height: 5%;\"></div>"
 
 /***/ }),
 
