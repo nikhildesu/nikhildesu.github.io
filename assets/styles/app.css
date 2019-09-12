@@ -212,8 +212,8 @@
 
 
 .shake-bottom {
-	-webkit-animation: shake-bottom 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) 10 both;
-	        animation: shake-bottom 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) 10 both;
+	-webkit-animation: shake-bottom 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) 5 both;
+	        animation: shake-bottom 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) 5 both;
 }
 
 .shake-bottom3 {
