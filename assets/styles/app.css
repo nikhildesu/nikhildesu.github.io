@@ -10,7 +10,7 @@
     font-style: initial;
     font-family: 'Footlight MT Light';
     font-size: 35px;
-    margin-top: 3%;
+    margin-top: 2%;
     text-align: center;
     background: -webkit-linear-gradient(rgb(10, 65, 116), rgb(194, 63, 63));
     -webkit-background-clip: text;
@@ -212,8 +212,8 @@
 
 
 .shake-bottom {
-	-webkit-animation: shake-bottom 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) 5 both;
-	        animation: shake-bottom 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) 5 both;
+	-webkit-animation: shake-bottom 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) 10 both;
+	        animation: shake-bottom 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) 10 both;
 }
 
 .shake-bottom3 {
